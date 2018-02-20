@@ -1,5 +1,5 @@
 div.container--outer.how
-    background-image linear-gradient(224deg, #FFFFFF 30%, #F2F5F9 100%)
+    background-image: linear-gradient(131deg, #FFFFFF 2%, #FEF1F1 100%);
     div.container--inner
         div.text-content
             width 100%
@@ -18,9 +18,18 @@ div.container--outer.how
                 width 900px
                 margin-bottom 40px
                 
+                @media screen and (max-width 900px)
+                    width 95vw
+                    
+                @media screen and (max-width 750px)
+                    flex-flow column wrap
+                
                 button.btn
                     margin-top -17px
-            
+                    
+                    @media screen and (max-width 750px)
+                        margin-top 30px
+                        
         div.image-content
             width 100%
             display flex
@@ -33,3 +42,7 @@ div.container--outer.how
                 background-image url('assets/app.png')
                 width 852px
                 height 520px
+                
+                @media screen and (max-width 852px)
+                    width 100vw
+                    height 61.03vw
