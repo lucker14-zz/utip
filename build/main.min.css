@@ -111,6 +111,104 @@ div.container--outer.hero div.container--inner div.image-content div.image--pew 
   border-radius: 4px;
 }
 
+div.container--outer.how {
+  background-image: -webkit-linear-gradient(226deg, #fff 30%, #f2f5f9 100%);
+  background-image: -moz-linear-gradient(226deg, #fff 30%, #f2f5f9 100%);
+  background-image: -o-linear-gradient(226deg, #fff 30%, #f2f5f9 100%);
+  background-image: -ms-linear-gradient(226deg, #fff 30%, #f2f5f9 100%);
+  background-image: linear-gradient(224deg, #fff 30%, #f2f5f9 100%);
+}
+div.container--outer.how div.container--inner div.text-content {
+  width: 100%;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+}
+div.container--outer.how div.container--inner div.text-content h2 {
+  width: 100%;
+  text-align: center;
+}
+div.container--outer.how div.container--inner div.text-content div.row-container {
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -o-box-orient: horizontal;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 900px;
+  margin-bottom: 40px;
+}
+div.container--outer.how div.container--inner div.text-content div.row-container button.btn {
+  margin-top: -17px;
+}
+div.container--outer.how div.container--inner div.image-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -o-box-orient: horizontal;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+div.container--outer.how div.container--inner div.image-content div.image--app {
+  -webkit-box-shadow: 0 2px 10px 0 rgba(157,139,139,0.29), 0 12px 24px 0 rgba(53,53,53,0.05);
+  box-shadow: 0 2px 10px 0 rgba(157,139,139,0.29), 0 12px 24px 0 rgba(53,53,53,0.05);
+  border-radius: 4px;
+  background-image: url("assets/app.png");
+  width: 852px;
+  height: 520px;
+}
 
 div.icon-box {
   -webkit-box-orient: vertical;
