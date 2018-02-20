@@ -8,7 +8,7 @@ body, html
 
 
 *
-    font-family "Calibre"
+    font-family "Roboto", sans-serif
     box-sizing border-box
 
     &:focus, &:active
@@ -55,3 +55,7 @@ ul, li
         justify-content flex-start
         align-items flex-start
         min-height 500px
+        max-width 1200px
+        
+        @media screen and (max-width 999px)
+            max-width 95%
