@@ -1,9 +1,10 @@
-.btn {
+div.container .btn {
   cursor: pointer;
   outline: none;
   border: none;
   -webkit-appearance: none;
-  padding: 16px 20px;
+  padding: 15px 27px 19px 25px;
+  margin-top: 30px;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -40,21 +41,21 @@
   box-shadow: 0 2px 10px 0 rgba(51,51,51,0.1), 0 12px 24px 0 rgba(244,128,128,0.5);
   border-radius: 100px;
 }
-.btn:hover {
+div.container .btn:hover {
   -webkit-transform: translate3d(0, -1px, 0);
   -moz-transform: translate3d(0, -1px, 0);
   -o-transform: translate3d(0, -1px, 0);
   -ms-transform: translate3d(0, -1px, 0);
   transform: translate3d(0, -1px, 0);
 }
-.btn:active {
+div.container .btn:active {
   -webkit-transform: translate3d(0, 1px, 0);
   -moz-transform: translate3d(0, 1px, 0);
   -o-transform: translate3d(0, 1px, 0);
   -ms-transform: translate3d(0, 1px, 0);
   transform: translate3d(0, 1px, 0);
 }
-.btn.blue {
+div.container .btn.blue {
   background-image: -webkit-linear-gradient(135deg, #0d2b65 0%, #2e487a 97%);
   background-image: -moz-linear-gradient(135deg, #0d2b65 0%, #2e487a 97%);
   background-image: -o-linear-gradient(135deg, #0d2b65 0%, #2e487a 97%);
@@ -64,39 +65,106 @@
   box-shadow: 0 2px 10px 0 rgba(60,74,101,0.1), 0 12px 24px 0 rgba(13,43,101,0.4);
   border-radius: 100px;
 }
-.btn p {
+div.container .btn p {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 20px;
   color: #fff;
 }
 
-h1,
-h2 {
+div.container h1,
+div.container h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 100px;
   color: $light_red;
   line-height: 118px;
+  margin-bottom: 45px;
 }
-h1.blue,
-h2.blue {
+div.container h1.blue,
+div.container h2.blue {
   color: $dark_blue;
 }
-p {
+div.container p {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
   color: $black;
 }
 
+div.container--outer.hero {
+  background-image: -webkit-linear-gradient(221deg, #fef1f1 2%, #fff 100%);
+  background-image: -moz-linear-gradient(221deg, #fef1f1 2%, #fff 100%);
+  background-image: -o-linear-gradient(221deg, #fef1f1 2%, #fff 100%);
+  background-image: -ms-linear-gradient(221deg, #fef1f1 2%, #fff 100%);
+  background-image: linear-gradient(-131deg, #fef1f1 2%, #fff 100%);
+}
+div.container--outer.hero div.container--inner div.text-content {
+  max-width: 445px;
+}
+div.container--outer.hero div.container--inner div.image-content div.image--pew {
+  background-image: url("assets/video.png");
+  width: 835px;
+  height: 596px;
+  -webkit-box-shadow: 0 2px 10px 0 rgba(157,139,139,0.09), 0 12px 24px 0 rgba(53,53,53,0.05);
+  box-shadow: 0 2px 10px 0 rgba(157,139,139,0.09), 0 12px 24px 0 rgba(53,53,53,0.05);
+  border-radius: 4px;
+}
 
 
+div.icon-box {
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -o-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -o-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+}
+div.icon-box__line {
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -o-box-orient: horizontal;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -o-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-bottom: 18px;
+}
 div.icon {
   width: 22px;
   height: 20px;
   background-position: center;
   background-repeat: no-repeat;
+  margin-right: 10px;
 }
 div.icon.icon--lock {
   background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDQ4LjIgKDQ3MzI3KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5pY29uPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IkRlc2t0b3AtSEQtQ29weS0yIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzEyLjAwMDAwMCwgLTE5NjIuMDAwMDAwKSI+CiAgICAgICAgPGcgaWQ9Ikl0J3MtY2xlYXIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLCAxNjY2LjAwMDAwMCkiPgogICAgICAgICAgICA8ZyBpZD0iUG9pbnRzLUNvcHkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMxMC4wMDAwMDAsIDIyNS4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxnIGlkPSJTYWZlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzLjAwMDAwMCwgNzAuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICAgICAgPGcgaWQ9Imljb24iIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLCAyLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNNiw0IEw2LDIgQzYsMC44OTU0MzA1IDYuODk1NDMwNSwwIDgsMCBMMTAsMCBDMTEuMTA0NTY5NSwtMi4yMjA0NDYwNWUtMTYgMTIsMC44OTU0MzA1IDEyLDIgTDEyLDQgTDEzLDQgQzE0LjEwNDU2OTUsNCAxNSw0Ljg5NTQzMDUgMTUsNiBMMTUsMTIgQzE1LDEzLjEwNDU2OTUgMTQuMTA0NTY5NSwxNCAxMywxNCBMNSwxNCBDMy44OTU0MzA1LDE0IDMsMTMuMTA0NTY5NSAzLDEyIEwzLDYgQzMsNC44OTU0MzA1IDMuODk1NDMwNSw0IDUsNCBMNiw0IFoiIGlkPSJDb21iaW5lZC1TaGFwZSIgZmlsbC1vcGFjaXR5PSIwLjExOTk5OTk5NyIgZmlsbD0iI0ZGNEM0QyI+PC9wYXRoPgogICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNNSw0IEw1LDIuNTcwNjY2ODcgQzUsMi4yNTU0OTYyNiA1LjI5ODQ3NjgzLDIgNS42NjY2NjY2NywyIEw2LjMzMzMzMzMzLDIgQzYuNzAxNTIzMTcsMiA3LDIuMjU1NDk2MjYgNywyLjU3MDY2Njg3IEw3LDQgTDUsNCBaIiBpZD0iUmVjdGFuZ2xlLTciIHN0cm9rZT0iI0ZGNEM0QyIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PC9wYXRoPgogICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMyw0LjAwOTM0MzI5IEwzLDIgQzMsMC44OTU0MzA1IDMuODk1NDMwNSwwIDUsMCBMNywwIEM4LjEwNDU2OTUsLTIuMjIwNDQ2MDVlLTE2IDksMC44OTU0MzA1IDksMiBMOSw0LjAwOTM0MzI5IiBpZD0iUmVjdGFuZ2xlLTctQ29weSIgc3Ryb2tlPSIjRkY0QzRDIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48L3BhdGg+CiAgICAgICAgICAgICAgICAgICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGUtNiIgc3Ryb2tlPSIjRkY0QzRDIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHg9IjAiIHk9IjQiIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMCIgcng9IjIiPjwvcmVjdD4KICAgICAgICAgICAgICAgICAgICAgICAgPHRleHQgaWQ9InMiIGZvbnQtZmFtaWx5PSJSb2JvdG8tTWVkaXVtLCBSb2JvdG8iIGZvbnQtc2l6ZT0iMTAiIGZvbnQtd2VpZ2h0PSI0MDAiIGxldHRlci1zcGFjaW5nPSIwLjc3Nzc3NzgiIGZpbGw9IiNGRjRDNEMiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHRzcGFuIHg9IjMuNDY2NDc1MzUiIHk9IjExLjg5MTE2OTIiPnM8L3RzcGFuPgogICAgICAgICAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=");
@@ -263,7 +331,8 @@ li {
   -webkit-align-items: flex-start;
   align-items: flex-start;
   min-height: 500px;
-  max-width: 1200px;
+  max-width: 1280px;
+  padding: 50px 0;
 }
 @media screen and (max-width: 999px) {
   .container--inner {
@@ -294,20 +363,28 @@ div.image-content {
   -webkit-align-items: flex-start;
   align-items: flex-start;
 }
+div.image {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
-h1,
-h2 {
+div.container h1,
+div.container h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 100px;
   color: #ff4c4c;
   line-height: 118px;
+  margin-bottom: 45px;
 }
-h1.blue,
-h2.blue {
+div.container h1.blue,
+div.container h2.blue {
   color: #0d2b65;
 }
-p {
+div.container p {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -423,7 +500,8 @@ li {
   -webkit-align-items: flex-start;
   align-items: flex-start;
   min-height: 500px;
-  max-width: 1200px;
+  max-width: 1280px;
+  padding: 50px 0;
 }
 @media screen and (max-width: 999px) {
   .container--inner {
@@ -453,6 +531,13 @@ div.image-content {
   -ms-flex-align: start;
   -webkit-align-items: flex-start;
   align-items: flex-start;
+}
+div.image {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
