@@ -4,6 +4,7 @@ div.container--outer.hero
         position relative
         @media screen and (max-width 1280px)
             justify-content space-between
+            align-items center
 
         div.text-content
             max-width 445px
@@ -16,6 +17,14 @@ div.container--outer.hero
             @media screen and (max-width 1280px)
                 position absolute
                 right -130px
+                
+                
+            @media screen and (max-width 750px)
+                margin-top 0px
+                
+            @media screen and (max-width 430px)
+                position unset
+                margin-top 40px
 
             div.image--pew
                 background-image url('assets/video.png')
@@ -34,6 +43,6 @@ div.container--outer.hero
                 //     height 35.6vw
                     
                 @media screen and (max-width 430px)
-                    width 100vw
-                    height 63.74vw
+                    width 95vw
+                    height 67.4vw
                     
