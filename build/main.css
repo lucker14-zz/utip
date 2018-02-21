@@ -1005,6 +1005,7 @@ div.container--outer.signup div.container--inner {
   justify-content: flex-end;
 }
 div.container--outer.signup div.container--inner div.text-content {
+  margin: 0;
   max-width: 466px;
 }
 div.container--outer.signup div.container--inner div.image-content div.signup-box {
@@ -1033,6 +1034,7 @@ div.container--outer.what div.container--inner {
   justify-content: flex-end;
 }
 div.container--outer.what div.container--inner div.text-content {
+  margin: 0;
   max-width: 567px;
 }
 div.container--outer.what div.container--inner div.image-content div.image--yt {
